@@ -1,10 +1,8 @@
-using System.Collections.Generic;
-using Dotnet_rpg.Dtos.Skill;
 using Dotnet_rpg.Models;
 
 namespace Dotnet_rpg.Dtos.Character
 {
-    public class GetCharacterDto
+    public class UpdateCharacterDto
     {
         public int Id { get; set; }
         public string Name { get; set; }="frodo";
@@ -16,6 +14,5 @@ namespace Dotnet_rpg.Dtos.Character
         public int  Intelligence { get; set; }=10;
 
          public RpgClass Class { get; set; }=RpgClass.Knight;
-         public List<GetSkillDto> Skills { get; set; }
     }
 }
